@@ -14,14 +14,11 @@
     }
 
     .navbar a {
-      color: blue;
-      text-align: center;
-      justify-content: space-between;
-      display: flex;
-      font-size: 20px;
-      margin-top: 10px;
-      margin-right: 25px;
-      margin-left: 5px;
+    color: #BBB8B2;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 25px;
+    margin-left: 5px;
     }
 
     a:hover {
@@ -31,7 +28,8 @@
     body {
       padding-top: 60px;
       font-family: "Poppins", sans-serif;
-      background: #f0f0f0;
+      background-color: #F5F1E3;
+
     }
 
     .rating-section {
@@ -41,6 +39,9 @@
       padding: 25px;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-style: solid;
+      border-width: thick;
+      border-color: ##08415C;s
     }
 
     .rating-question {
@@ -66,6 +67,7 @@
       border-radius: 8px;
       border: 1px solid #ccc;
       resize: none;
+
     }
  
   </style>
@@ -73,7 +75,7 @@
 
 <body>
 <br><br>
-  <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <img src="https://www.dotrmrt3.gov.ph/dotr-seal.png" alt="Logo" style="width:50px;">
@@ -85,10 +87,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Login</a>
+                    <a class="nav-link" href="index.html">Main Page</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="mainpage.html">Personal Info</a>
+                    <a class="nav-link" href="mainpage.html">Personal Information</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -113,12 +115,12 @@
 
             <form class="d-flex">
                 <input class="form-control me-2" type="text" placeholder="Search..." style="background-color: lightgray; width: 200px; height: 40px;">
-                <button class="btn btn-success" type="button" style="height: 40px; width: 75px;">Search</button>
+                <button class="btn btn-light
+                " type="button" style="height: 40px; width: 75px;">Search</button>
             </form>
-          </div>
         </div>
-      </nav>
-
+    </div>
+</nav>
   <div class="rating-section">
     <h3 class="text-center">We’d love your feedback!</h3>
 
@@ -167,7 +169,7 @@
     </div>
 
     <textarea id="feedback" placeholder="Share your thoughts or suggestions..."></textarea>
-    <button class="btn btn-success" id="submitBtn" onclick="submitFeedback()">Submit</button>
+    <button class="btn btn-warning" id="submitBtn" onclick="submitFeedback()">Submit</button>
   </div>
 
   <script>
