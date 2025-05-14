@@ -25,7 +25,7 @@
             justify-content: center;
             min-height: 100vh;
             background: url('https://media.discordapp.net/attachments/1358622159076987051/1371814087654248540/image.png?ex=682529ad&is=6823d82d&hm=41a9258db6660c83ea3b76a5e86dc4841ac7cd6ecddb8e0296e1fd760b3fce9c&=&format=webp&quality=lossless&width=695&height=530') no-repeat center center; 
-            /* gray background for filler for now (Alfred my goat) */
+
             background-size: cover;
         }
 
@@ -38,8 +38,9 @@
         .wrapper {
             max-width: 90%;
             width: 420px;
-            background: #A9A9A9;
-            border: 2px solid rgba(255, 255, 255, 0.5);
+            background: rgba(169, 169, 169, 0.2); 
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(60px); 
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             color: #fff;
             padding: 20px;
@@ -86,7 +87,7 @@
 
         .btn {
             font-family: myFont;
-            width: 100%;
+         width: 100%;
             height: 45px;
             background: #fff;
             border: none;
@@ -102,21 +103,14 @@
             justify-content: center;
         }
 
-        .register-link {
-            font-size: 14px;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .register-link p a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 600;
+        .btn:hover {
+            background: #ADD8E6; 
+            color: #333;
         }
 
         .register-link p a:hover {
             text-decoration: underline;
-            color: #00008B;
+            color: #ADD8E6; 
         }
     </style>
 </head>
